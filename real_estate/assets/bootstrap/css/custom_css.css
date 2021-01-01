@@ -1,0 +1,298 @@
+
+<style>
+/*************************  FRONTEND CSS -- START ****************/
+
+/* header */
+#logo {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 150px;
+  height:80px;
+  margin-left:5%;
+ 
+}
+
+.navbar{
+  top: 20px;
+  margin-right: 40%;
+    
+}
+
+#mNavbar{
+  margin-right: 7%;
+  margin-left: 5%;
+  padding-top:1%;
+  
+}
+
+#bs-example-navbar-collapse-1
+{
+  margin-right: 25%;
+  min-height: 40px; 
+}
+
+body{
+  position: relative;
+  display: block;
+  height: 1000px;
+  overflow-y: scroll; 
+}
+
+.header
+{
+  font-size: 17px;
+}
+/* header */
+
+/* top header */
+#top_header{
+ background-color:yellow;
+ width : 100%;
+}
+
+#icons {
+  padding: 5px;
+  width: 40px;
+  height:40px
+}
+/* top header */
+
+/* sub header */
+.inside-banner {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    max-height: 40px;
+    font-size: 15px;
+}
+/* sub header */
+
+/* footer */
+#icons {
+  padding: 5px;
+  width: 40px;
+  height:40px
+
+}
+/* footer */
+
+/* Display property images on buysalerent page  buysalerent/buysalerent.php */
+#image_holder{
+  padding: 5px;
+  width: 240px;
+  height:250px
+}
+
+#rupee {
+  padding: 5px;
+  width: 20px;
+  height:20px
+}
+
+#hot_property {
+ 
+ width: 80px;
+ height:90px
+}
+/* Display property images on buysalerent page  buysalerent/buysalerent.php */
+
+/* Display property images and rupee image on property details page property_details/property_details.php */
+#image_property_details{
+  padding: 5px;
+  width: 500px;
+  height:270px
+
+}
+
+#property_details_rupee {
+  padding: 5px;
+  width: 50px;
+  height:50px
+
+}
+/* Display property images and rupee image on property details page property_details/property_details.php */
+
+
+/* Display agent images on agent page agents/agents.php */
+#agent_img{
+
+  width: 500px;
+  height:100px
+}
+
+#agent_content{
+  font-size: 15px;
+}
+/* Display agent images on agent page agents/agents.php */
+
+
+/* Display about images on about page about/about.php */
+#about_img{ 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 700px;
+  height:300px;
+}
+/* Display about images on about page about/about.php */
+
+
+/* Slider images ->multiple image upload **************************/
+/*Copied from bootstrap to handle input file multiple*/
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/*Also */
+.btn-success {
+  border: 1px solid #c5dbec;
+  background: #d0e5f5;
+  font-weight: bold;
+  color: #2e6e9e;
+}
+/* This is copied from https://github.com/blueimp/jQuery-File-Upload/blob/master/css/jquery.fileupload.css */
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: "alpha(opacity=0)";
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.thumb {
+  height: 80px;
+  width: 100px;
+  border: 1px solid #000;
+}
+
+ul.thumb-Images li {
+  width: 120px;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  height: 120px;
+}
+
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.img-wrap .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  background-color: #d0e5f5;
+  padding: 5px 2px 2px;
+  color: #000;
+  font-weight: bolder;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 23px;
+  line-height: 10px;
+  border-radius: 50%;
+}
+
+.img-wrap:hover .close {
+  opacity: 1;
+  background-color: #ff0000;
+}
+.FileNameCaptionStyle {
+  font-size: 12px;
+}
+.property_block {
+  padding-top: 100px;
+  border: 1px solid #4CAF50;
+  
+}
+/* Slider images ->multiple image upload **************************/
+
+/* searchable dropdown***/
+.box_search
+ {
+  width:100%;
+  max-width: 650px;
+  margin-left:60%;
+ }
+
+#container {
+  width: 300px;
+  border: 0px solid green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* searchable dropdown***/
+
+
+#image_preview{
+  padding: 5px;
+  width: 0px;
+  height:0px
+}
+
+/*************************  FRONTEND CSS -- END ****************/
+</style>
+
+
+<style>
+/*************************  ADMIN(BACKEND) CSS -- START ****************/
+
+ /* make input fields readable on view form */
+ input[readonly]{
+    background-color:transparent;
+    border: 0;
+    font-size: 1em;
+    }
+   /* make input fields readable on view form */
+
+ /* preview images after upload */
+    .thumb{
+    max-width: 50%;
+   
+    font-size:10px;
+    border-radius: 50%;
+    } 
+
+    .thumb-Images li{
+    width:50%;
+    height:50%;
+    }
+
+    .thumb-Images ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    .thumb-Images li {
+    float: left;
+    }
+ /* preview images after upload */
+ 
+/*************************  ADMIN(BACKEND) CSS -- START ****************/
+</style>
